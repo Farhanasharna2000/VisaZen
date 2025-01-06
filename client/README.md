@@ -18,7 +18,7 @@ With a **dynamic interface**, **robust features**, and a **focus on usability**,
 ## 🌐 **Live Application**  
 
 Explore VisaZen live:  
-👉 [**VisaZen**](https://visa-navigator-2803f.web.app/)  
+👉 [**VisaZen**](https://visazen-b62f7.web.app)  
 
 ---
 
