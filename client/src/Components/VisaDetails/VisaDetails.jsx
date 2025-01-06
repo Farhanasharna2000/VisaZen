@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { authContext } from "../AuthProvider/AuthProvider";
 import { FaTimes } from "react-icons/fa";
 import Swal from "sweetalert2";
@@ -161,12 +161,25 @@ const VisaDetails = () => {
                                 ))}
                             </ul>
                         </div>
-                        <button
-                            className="mt-4 font-bold hover:bg-slate-100 bg-[#111A3A]  hover:text-[#111A3A] text-white p-2 rounded-lg "
-                            onClick={() => setIsModalOpen(true)}
-                        >
-                            Apply for the Visa
-                        </button>
+                        {user?
+                     (   <button
+                        className="mt-4 font-bold hover:bg-slate-100 bg-[#111A3A]  hover:text-[#111A3A] text-white p-2 rounded-lg "
+                        onClick={() => setIsModalOpen(true)}
+                    >
+                        Apply for the Visa
+                    </button> )
+                    :
+                  
+                    <Link to={'/login'}>
+                    <button
+                        className="mt-4 font-bold hover:bg-slate-100 bg-[#111A3A]  hover:text-[#111A3A] text-white p-2 rounded-lg "
+                       
+                    >
+                        Apply for the Visa
+                    </button>
+                    </Link>
+                    }
+                      
                     </div>
                 </div>
             </div>

@@ -16,37 +16,50 @@ const MyAddedVisas = () => {
     const { theme } = useTheme();
     useEffect(() => {
         const fetchData = async () => {
+            setLoading(true); // Start loading
             try {
                 if (!user?.email) {
                     setLoading(false);
+                    setError("User email not provided.");
                     return;
                 }
-
+    
                 const response = await fetch("https://visazen-server.vercel.app/myAddedVisas", {
                     method: "GET",
                     headers: {
                         "Content-Type": "application/json",
-                        Authorization: `Bearer ${user?.email}`,
+                        Authorization: `Bearer ${user.email}`,
                     },
                 });
-
-
+    
+                if (!response.ok) {
+                  
+                    throw new Error(`HTTP Error: ${response.status}`);
+                }
+    
                 const data = await response.json();
-
-                setMyAddedVisas(data);
-                setLoading(false);
-
+    
+                if (Array.isArray(data)) {
+                    setMyAddedVisas(data); 
+                } else {
+                    
+                    setError("Unexpected response format.");
+                    setMyAddedVisas([]);
+                }
             } catch (error) {
-                setError("An error occurred while fetching data", error);
-                setLoading(false);
-
-            } 
+                console.error("Error fetching data:", error); 
+                setError("No data found");
+                setMyAddedVisas([]);
+            } finally {
+                setLoading(false); 
+            }
         };
-
+    
         if (user?.email) {
             fetchData();
-          }
-    }, [user?.email])
+        }
+    }, [user?.email]);
+    
 
     const handleDelete = (id) => {
         fetch(`https://visazen-server.vercel.app/myAddedVisas/${id}`, {
