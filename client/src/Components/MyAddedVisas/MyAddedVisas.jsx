@@ -22,7 +22,7 @@ const MyAddedVisas = () => {
                     return;
                 }
 
-                const response = await fetch("https://server-9h97n3i0b-farhana-sharnas-projects.vercel.app/myAddedVisas", {
+                const response = await fetch("https://visazen-server.vercel.app/myAddedVisas", {
                     method: "GET",
                     headers: {
                         "Content-Type": "application/json",
@@ -49,7 +49,7 @@ const MyAddedVisas = () => {
     }, [user?.email])
 
     const handleDelete = (id) => {
-        fetch(`https://server-9h97n3i0b-farhana-sharnas-projects.vercel.app/myAddedVisas/${id}`, {
+        fetch(`https://visazen-server.vercel.app/myAddedVisas/${id}`, {
             method: "DELETE",
         })
             .then((res) => res.json())
@@ -93,7 +93,7 @@ const MyAddedVisas = () => {
         };
 
         try {
-            const response = await fetch(`https://server-9h97n3i0b-farhana-sharnas-projects.vercel.app/update/${visaToUpdate._id}`, {
+            const response = await fetch(`https://visazen-server.vercel.app/update/${visaToUpdate._id}`, {
                 method: "PATCH",
                 headers: {
                     'Content-Type': 'application/json',

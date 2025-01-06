@@ -35,7 +35,7 @@ const router = createBrowserRouter([
         path: "/all-visas",
         element: 
           <AllVisas />,
-        loader: () => fetch("https://server-9h97n3i0b-farhana-sharnas-projects.vercel.app/visaData")
+        loader: () => fetch("https://visazen-server.vercel.app/visaData")
       },
       {
         path: "/visa-details/:id",

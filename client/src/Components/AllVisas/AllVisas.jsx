@@ -21,8 +21,8 @@ const AllVisas = () => {
   // Fetch data with sorting and visa type filtering
   const fetchVisaData = (visaType, sortOrder) => {
     const url = visaType && visaType !== "Select visa type"
-      ? `https://server-9h97n3i0b-farhana-sharnas-projects.vercel.app/selectedVisa?visaType=${visaType}&sort=${sortOrder}`
-      : `https://server-9h97n3i0b-farhana-sharnas-projects.vercel.app/visaData?sort=${sortOrder}`;
+      ? `https://visazen-server.vercel.app/selectedVisa?visaType=${visaType}&sort=${sortOrder}`
+      : `https://visazen-server.vercel.app/visaData?sort=${sortOrder}`;
   
     fetch(url, {
       headers: {

@@ -35,7 +35,7 @@ const AddVisa = () => {
         const newData = { image, name, visaType, processingTime, description, age, fee, validity, method, requiredDocuments, authUserEmail }
 
 
-        fetch("https://server-9h97n3i0b-farhana-sharnas-projects.vercel.app/visaData", {
+        fetch("https://visazen-server.vercel.app/visaData", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'

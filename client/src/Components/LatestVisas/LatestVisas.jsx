@@ -7,7 +7,7 @@ const LatestVisas = () => {
   const [latestVisas, setLatestVisas] = useState([]);
 
   useEffect(() => {
-    fetch("https://server-9h97n3i0b-farhana-sharnas-projects.vercel.app/visaDataSort")
+    fetch("https://visazen-server.vercel.app/visaDataSort")
       .then((response) => response.json())
       .then((data) => {
         setLatestVisas(data);

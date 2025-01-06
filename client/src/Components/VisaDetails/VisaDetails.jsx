@@ -41,7 +41,7 @@ const VisaDetails = () => {
     };
 
     useEffect(() => {
-        fetch(`https://server-9h97n3i0b-farhana-sharnas-projects.vercel.app/visaData/${id}`)
+        fetch(`https://visazen-server.vercel.app/visaData/${id}`)
             .then((res) => res.json())
             .then((data) => {
                 setVisaDetails(data);
@@ -80,7 +80,7 @@ const VisaDetails = () => {
     const handleSubmit = (e) => {
 
         e.preventDefault();
-        fetch("https://server-9h97n3i0b-farhana-sharnas-projects.vercel.app/visaApplications", {
+        fetch("https://visazen-server.vercel.app/visaApplications", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
