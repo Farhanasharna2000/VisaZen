@@ -1,3 +1,9 @@
+<img 
+  src="https://i.ibb.co.com/VNdPHY8/visa.png" 
+  alt="Farhana Akter Sharna" 
+  style="width: 100%; height: auto;" 
+/>
+
 # 🌏 **VisaZen**: Visa Navigator Portal  
 
 Welcome to **VisaZen**, the ultimate Visa Navigator Portal designed to streamline your visa-related needs. Whether you're planning a trip or managing your application, VisaZen is here to make the process simple, efficient, and stress-free.  
