@@ -258,6 +258,7 @@ const VisaDetails = () => {
                                         readOnly
                                         className="w-full p-2 border border-gray-300 rounded"
                                     />
+                                    
                                 </div>
                             </div>
 
