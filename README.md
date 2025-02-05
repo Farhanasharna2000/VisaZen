@@ -1,12 +1,11 @@
-<img 
-  src="https://i.ibb.co.com/VNdPHY8/visa.png" 
-  alt="Farhana Akter Sharna" 
-  style="width: 100%; height: auto;" 
-/>
 
-# 🌏 **VisaZen**: Visa Navigator Portal  
+# 🛂 **VisaZen**: Visa Navigator Portal  
 
-Welcome to **VisaZen**, the ultimate Visa Navigator Portal designed to streamline your visa-related needs. Whether you're planning a trip or managing your application, VisaZen is here to make the process simple, efficient, and stress-free.  
+![VisaZen Banner](/client/public/visa.png)  
+
+🌐 **Live Application**: [**Visit VisaZen**](https://visazen-b62f7.web.app)  
+
+VisaZen is the ultimate Visa Navigator Portal designed to streamline your visa-related needs. Whether you're planning a trip or managing your application, VisaZen makes the process **simple, efficient, and stress-free**.  
 
 ---
 
@@ -21,111 +20,118 @@ With a **dynamic interface**, **robust features**, and a **focus on usability**,
 
 ---
 
-## 🌐 **Live Application**  
-
-Explore VisaZen live:  
-👉 [**VisaZen**](https://visazen-b62f7.web.app)  
-
----
-
 ## ✨ **Key Features**  
 
-### 1. **Visa Requirement Checker**  
-- Discover visa requirements for your nationality and destination in seconds.  
-- Stay updated with accurate, globally compliant travel policies.  
+### 1️⃣ **Visa Requirement Checker**  
+✔ Discover visa requirements for your nationality and destination in seconds.  
+✔ Stay updated with accurate, globally compliant travel policies.  
 
-### 2. **Online Visa Application**  
-- Submit applications online with a user-friendly form layout.  
-- Upload necessary documents securely.  
+### 2️⃣ **Online Visa Application**  
+✔ Submit applications online with a user-friendly form layout.  
+✔ Upload necessary documents securely.  
 
-### 3. **Application Tracking**  
-- Receive real-time updates on your application status.  
-- Stay informed with notifications for key milestones.  
+### 3️⃣ **Application Tracking**  
+✔ Receive real-time updates on your application status.  
+✔ Stay informed with notifications for key milestones.  
 
-### 4. **Dynamic User Interface**  
-- Responsive design ensures a seamless experience across all devices.  
-- Easy navigation for browsing and submitting forms hassle-free.  
+### 4️⃣ **Dynamic User Interface**  
+✔ Responsive design ensures a seamless experience across all devices.  
+✔ Easy navigation for browsing and submitting forms hassle-free.  
 
-### 5. **Secure and Reliable**  
-- Advanced encryption to protect personal information.  
-- Reliable backend for smooth and consistent performance.  
+### 5️⃣ **Secure and Reliable**  
+✔ Advanced encryption to protect personal information.  
+✔ Reliable backend for smooth and consistent performance.  
 
-### 6. **Support and Guidance**  
-- Access FAQs and resources for common queries.  
-- Reach out for personalized assistance when needed.  
-
----
-
-## 🛠 **Technology Stack**  
-
-- **Frontend**: React, Tailwind CSS, DaisyUI, React Router  
-- **Backend**: Node.js, Express  
-- **Database**: MongoDB  
-- **Hosting**: Firebase  
+### 6️⃣ **Support and Guidance**  
+✔ Access FAQs and resources for common queries.  
+✔ Reach out for personalized assistance when needed.  
 
 ---
 
-## 💻 **How to Run Locally**  
+## 🛠 **Tech Stack**  
 
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/Farhanasharna2000/Farhanasharna2000.git
-    cd Farhanasharna2000
-    ```
+### **Frontend:**  
+- **React.js** (Modern UI development)  
+- **React Router DOM** (Seamless navigation)  
+- **Swiper.js** (Smooth carousels)  
+- **React Icons & Lottie Animations** (Enhanced UI)  
+- **React Tooltip & Typewriter Effects** (Better user engagement)  
 
-2. **Install dependencies**:
-    ```bash
-    npm install
-    ```
+### **Backend:**  
+- **Express.js** (Server-side framework)  
+- **MongoDB** (NoSQL database for storing visa applications)  
+- **CORS & Dotenv** (Security and environment management)  
 
-3. **Start the development server**:
-    ```bash
-    npm run dev
-    ```
+### **Authentication & Storage:**  
+- **Firebase Authentication** (Secure login)  
+- **Firebase Storage** (For document uploads)  
 
-4. Visit [http://localhost:3000](http://localhost:3000) in your browser.
+### **State Management & Utilities:**  
+- **LocalForage** (Client-side caching for improved performance)  
+- **Axios** (API communication)  
+- **Match Sorter** (Advanced filtering)  
 
 ---
 
-## 📦 **Dependencies**  
+## 📦 **Installation**  
 
-Here are the project dependencies:
+To set up the project locally, follow these steps:
 
-```json
-"dependencies": {
-  "@emailjs/browser": "^4.4.1",
-  "aos": "^2.3.4",
-  "firebase": "^11.1.0",
-  "localforage": "^1.10.0",
-  "match-sorter": "^8.0.0",
-  "react": "^18.3.1",
-  "react-countup": "^6.5.3",
-  "react-datepicker": "^7.5.0",
-  "react-dom": "^18.3.1",
-  "react-helmet": "^6.1.0",
-  "react-hot-toast": "^2.4.1",
-  "react-icons": "^5.4.0",
-  "react-lottie": "^1.2.10",
-  "react-router-dom": "^7.0.2",
-  "react-simple-typewriter": "^5.0.1",
-  "react-tooltip": "^5.28.0",
-  "sort-by": "^1.2.0",
-  "sweetalert2": "^11.14.5",
-  "swiper": "^11.1.15"
-},
-"devDependencies": {
-  "@eslint/js": "^9.15.0",
-  "@types/react": "^18.3.12",
-  "@types/react-dom": "^18.3.1",
-  "@vitejs/plugin-react": "^4.3.4",
-  "autoprefixer": "^10.4.20",
-  "daisyui": "^4.12.14",
-  "eslint": "^9.15.0",
-  "eslint-plugin-react": "^7.37.2",
-  "eslint-plugin-react-hooks": "^5.0.0",
-  "eslint-plugin-react-refresh": "^0.4.14",
-  "globals": "^15.12.0",
-  "postcss": "^8.4.49",
-  "tailwindcss": "^3.4.15",
-  "vite": "^6.0.1"
-}
+### 1️⃣ Clone the repository  
+```sh
+git clonehttps://github.com/Farhanasharna2000/VisaZen  
+cd VisaZen  
+```
+
+### 2️⃣ Install dependencies  
+```sh
+npm install  
+```
+
+### 3️⃣ Set up environment variables  
+
+Create a `.env` file at the root of the project and add the following:  
+
+```ini
+VITE_apiKey=your_firebase_api_key  
+VITE_authDomain=your_firebase_auth_domain  
+VITE_projectId=your_firebase_project_id  
+VITE_storageBucket=your_firebase_storage_bucket  
+VITE_messagingSenderId=your_firebase_messaging_sender_id  
+VITE_appId=your_firebase_app_id  
+
+DB_USER=your_mongodb_username  
+DB_PASS=your_mongodb_password  
+```
+
+**⚠️ Note:** Never expose API keys or credentials in public repositories!  
+
+### 4️⃣ Start the development server  
+```sh
+npm run dev  
+```
+
+---
+
+## 🚀 **Usage**  
+
+Once the project is running:  
+✅ **Check visa requirements** for your destination.  
+✅ **Submit an online visa application** with required documents.  
+✅ **Track your visa application** status in real-time.  
+✅ **Receive updates** and notifications on key milestones.  
+
+---
+
+## 🤝 **Contributing**  
+
+We welcome contributions! To contribute:  
+1. Fork the repository.  
+2. Create a new branch (`feature-xyz`).  
+3. Commit your changes.  
+4. Push to your branch.  
+5. Open a Pull Request.  
+
+---
+
+🎉 **Enjoy using VisaZen!** 🚀  
